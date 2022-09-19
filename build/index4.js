@@ -52,8 +52,8 @@ class PersonA {
 }
 let a22 = new PersonA("abhijit");
 // private
-console.log(a22.firstName);
-console.log(a22.age);
+// console.log(a22.firstName)
+// console.log(a22.age)
 console.log(a22.getName());
 a22.setName("vishwa");
 console.log(a22.getName());
