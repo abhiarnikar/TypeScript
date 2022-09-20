@@ -76,3 +76,53 @@ let Audi = new vehicle("white");
 console.log(Audi.getcolor);
 Audi.setcolor = "red";
 console.log(Audi.getcolor);
+// program 3
+// Inheritance
+class fatherA {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    displayName() {
+        console.log(this.firstName, this.lastName);
+    }
+}
+class sonA extends fatherA {
+    constructor(firstName, lastName, sonName) {
+        super(firstName, lastName);
+        this.sonName = sonName;
+    }
+    displayName() {
+        console.log(this.sonName + this.lastName);
+        super.displayName();
+    }
+}
+let AbhijitA = new sonA("ashok", "arnikar", "abhijit");
+// program 4
+class WorldBank {
+    country() {
+        console.log('india');
+    }
+}
+class SBI extends WorldBank {
+    loan(interest) {
+        console.log(`Hello i am sbi loan interest ${interest}`);
+    }
+    save(interest) {
+        console.log(`Hello i am sbi saving interest ${interest}`);
+    }
+}
+class ICIC extends WorldBank {
+    loan(interest) {
+        console.log(`Hello i am ICIC loan interest ${interest}`);
+    }
+    save(interest) {
+        console.log(`Hello i am ICICI saving interest ${interest}`);
+    }
+}
+//let wb = new WorldBank()
+// let sbi = new SBI()
+// we cannot create object of abstract class
+// if abstract class is having abstract methods , those who inherit abstract class need to
+// give definition for methods
+// abstract class can have abstract and and non abstract method
