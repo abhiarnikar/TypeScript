@@ -25,6 +25,7 @@ let abhijit1 = new Employee(25, 'india');
 console.log(abhijit1);
 console.log(abhijit1.year);
 // Singleton pattern
+//this Pattern is used when we want to create Only one Object from class
 class Accounting {
     constructor(id, reports) {
         this.id = id;
@@ -47,3 +48,8 @@ let a1 = Accounting.getinstance();
 console.log(a1);
 let b1 = Accounting.getinstance();
 console.log(b1);
+// private constructor 
+// instance variable which is of type class
+// write a static method to check same instance value 
+//(undefined)
+// call the static method on class name
