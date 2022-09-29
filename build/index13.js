@@ -38,4 +38,4 @@ function printInfo1(emp) {
     }
 }
 printInfo1({ name: "abhijit", privilege: ["krushna", "kaivaly"] });
-printInfo1({ name: "abhijit", startDate: new Date() });
+printInfo1({ name: "vishwa", startDate: new Date() });
